@@ -1,0 +1,28 @@
+:root {
+  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+--font-family: "space-mono", monospace;
+ --text-color:#111111;
+ --bg-color:#ffffff;
+  --btn-color: dodgerblue;
+  --btn-color-hover: #0056b3;
+  --border-radius: 10px;
+}
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+
+}
+
+body {
+font-family: var(--font-family);
+background-color: var(--bg-color);
+color: var(--text-color);
+
+}
+
