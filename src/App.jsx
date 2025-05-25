@@ -1,14 +1,31 @@
-import "./App.css"
-import { Footer, Hero, Navbar, Skills } from "./components"
-
+import "./App.css";
+import { Navbar, Hero, About,Education, Skills,Project,Resume,Blog,Contact, Footer } from "./components";
+import { useState } from "react";
 const App = () => {
-  return (
-  
-      <Navbar />
-  
-     
-  
-  )
-}
+ const [theme, setTheme] = useState("light");
+ 
+   const toggleTheme = () => {
+     setTheme((prev) => (prev === "light" ? "dark" : "light"));
+   };
 
-export default App
+  return (
+    <>
+      <div className={theme}>
+        <section className="container">
+          <Navbar onToggleTheme={toggleTheme} theme={theme} />
+          <Hero />
+          <About />
+          <Education />
+          <Skills />
+          <Project />
+          <Resume />
+          <Blog />
+          <Contact />
+          <Footer />
+        </section>
+      </div>
+    </>
+  );
+};
+
+export default App;

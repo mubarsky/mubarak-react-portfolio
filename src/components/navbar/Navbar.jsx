@@ -1,22 +1,52 @@
-import styles from './navbar.module.css'
-
-const Navbar = () => {
+import { FaSun, FaRegMoon } from "react-icons/fa";
+import styles from "./navbar.module.css";
+import clsx from "clsx";
+const Navbar = ({ onToggleTheme, theme }) => {
   return (
-    <section className={styles.navbar}>
-      <img
-        src="/public/WhatsApp Image 2024-12-03 at 11.21.27_3b8336e3.jpg" alt="mubarak logo" />
-      
-      <ul>
-        <li className="styles.navlists"> Home</li>
-        <li className="styles.navlists"> About</li>
-        <li className="styles.navlists"> Skills</li>
-        <li className="styles.navlists"> Project</li>
-        <li className="styles.navlists"> Contact</li>
-        <li className="styles.navlists"> Foooter</li>
-      </ul>
-      
-    </section>
-  )
-}
+    <section className={clsx(styles.navbar, theme === "dark" && styles.dark)}>
+      <div className={styles.logo}>
+        <h1> Mubby </h1>
+      </div>
 
-export default Navbar
+      <ul className={styles.navbarlist}>
+        <a href="#about">
+          <li className={styles.navlists}> About</li>
+        </a>
+        <a href="#education">
+          <li className={styles.navlists}> Education </li>
+        </a>
+        <a href="#skills">
+          <li className={styles.navlists}> Skills</li>
+        </a>
+        <a href="#projects">
+          <li className={styles.navlists}> Projects</li>
+        </a>
+        <a href="#blog">
+          <li className={styles.navlists}> Blog </li>
+        </a>
+        <a href="#contact">
+          <li className={styles.navlists}> Contact </li>
+        </a>
+      
+        {theme === "dark" ? (
+          <FaSun
+            className={styles.brightness}
+            onClick={onToggleTheme}
+            style={{ cursor: "pointer" }}
+            title="Switch to light mode"
+          />
+        ) : (
+          <FaRegMoon
+            className={styles.brightness}
+            onClick={onToggleTheme}
+            style={{ cursor: "pointer" }}
+            title="Switch to dark mode"
+          />
+        )}
+       
+      </ul>
+    </section>
+  );
+};
+
+export default Navbar;
