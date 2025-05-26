@@ -1,0 +1,73 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.skillsContent {
+  text-align: center;
+}
+.skillsContent h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  margin-top: 7rem;
+  border-radius: 5px;
+}
+.skillsContent p {
+  color: #566666;
+}
+.skills {
+  display: flex;
+}
+.frontend {
+  flex: 1;
+}
+.frontend p {
+  text-align: center;
+  font-weight: 500;
+}
+img{
+  cursor: pointer;
+}
+.frontendIcons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+.backend {
+  flex: 1;
+}
+.backendIcons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+.backend p {
+  text-align: center;
+  font-weight: 500;
+}
+.otherTools {
+  flex: 1;
+}
+.otherToolsIcons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+.otherTools p {
+  text-align: center;
+  font-weight: 500;
+}
+
+
+:global(.dark) .skillsContent h1 {
+  border-bottom: 3px solid white;
+}
+

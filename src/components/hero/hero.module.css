@@ -1,0 +1,105 @@
+.hero {
+  display: flex;
+  padding-top: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  gap: 2rem;
+  margin: 1.5rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  flex: 1;
+  padding: 1rem;
+}
+.leftName {
+  font-size: 3rem;
+  /* line-height: 3.5rem; */
+}
+.leftP1 {
+  font-size: 1.5rem;
+  color: #566666;
+}
+.leftP2 {
+  font-size: 1.1rem;
+  color: #566666;
+}
+.heroBtn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.heroBtn button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.btn1 {
+  background-color: black;
+  color: white;
+  display: flex;
+  gap: 5px;
+}
+.mail {
+  font-size: 1.2rem;
+}
+.btn2 {
+  display: flex;
+  gap: 5px;
+}
+.download {
+  font-size: 1.2rem;
+}
+.right {
+  flex: 1;
+  text-align: right;
+}
+.right img {
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border: 5px solid #c8c6c6;
+}
+.right img:hover {
+  transform: scale(1.1);
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  animation: scroll 1s infinite;
+  flex-direction: column;
+  gap: 5px;
+  color: #566666;
+}
+@keyframes scroll {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+}
+.arrow {
+  color: black;
+}
+
+
+:global(.dark) .arrow {
+  color: white;
+}

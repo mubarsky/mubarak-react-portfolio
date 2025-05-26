@@ -1,6 +1,62 @@
+* {
+  box-sizing: border-box;
+
+}
+html {
+  scroll-behavior: smooth;
+}
 .container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* margin: 1.5rem; */
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+
+}
+.dark {
+  background-color: black;
+  color: #f5f5f5;
+}
+body, html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* App.css */
+
+/* General dark theme background and text */
+.dark {
+  background-color: #000000; /* Pure black */
+  color: white;
+};
+.dark .arrow {
+  color: white;
+}
+
+.dark h1,
+.dark p,
+.dark a {
+  color: white;
+}
+
+/* Hero-specific elements */
+.dark .btn1,
+.dark .btn2 {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark .btn1:hover,
+.dark .btn2:hover {
+  background-color: #444;
+}
+
+.dark .scroll p {
+  color: white;
+}
+
+.dark img {
+  filter: brightness(90%);
 }
