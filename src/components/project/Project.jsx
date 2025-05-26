@@ -83,7 +83,7 @@ const Project = ({ theme }) => {
             <SwiperSlide className={styles.swiperSlide}>
               <div className={styles.slide}>
                 <div className={styles.slideTop}>
-                  <img src="/public/portfolio.png" alt="" />
+                  <img src="/portfolio.png" alt="" />
                 </div>
                 <div className={styles.slideBottom}>
                   <div className={styles.slideBottomContent}>
@@ -123,7 +123,7 @@ const Project = ({ theme }) => {
             <SwiperSlide className={styles.swiperSlide}>
               <div className={styles.slide}>
                 <div className={styles.slideTop}>
-                  <img src="/public/BBC.png" alt="" />
+                  <img src="/BBC.png" alt="" />
                 </div>
                 <div className={styles.slideBottom}>
                   <div className={styles.slideBottomContent}>
