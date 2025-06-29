@@ -1,13 +1,17 @@
 :root {
   --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* line-height: 1.5; */
   font-weight: 400;
---font-family: "space-mono", monospace;
+/* --font-family: "space-mono", monospace; */
  --text-color:#111111;
  --bg-color:#ffffff;
   --btn-color: dodgerblue;
   --btn-color-hover: #0056b3;
   --border-radius: 10px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 a {
   font-weight: 500;
