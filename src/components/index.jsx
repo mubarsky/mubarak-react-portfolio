@@ -9,4 +9,4 @@ import Blog from "./blog/Blog";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 
-export { Navbar, Hero, About, Education, Skills, Project, Resume,Blog, Contact, Footer };
+export { Navbar, Hero, About, Education, Skills, Project, Resume,Blog, Contact, Footer }; 

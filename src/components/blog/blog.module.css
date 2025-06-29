@@ -23,12 +23,13 @@
   justify-content: center;
   gap: 2rem;
   max-width: 1200px;
-  width: 85%;
+  width: 100%;
 
   /* padding: 2rem; */
 }
 .card1 {
-  flex: 1;
+  /* flex: 1; */
+  flex: 0 1 300px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
 }

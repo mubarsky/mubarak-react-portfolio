@@ -4,7 +4,23 @@ import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { LuSend } from "react-icons/lu";
 import clsx from "clsx";
-const Contact = ({theme}) => {
+import { useState } from "react";
+const Contact = ({ theme }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");   
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => { 
+    e.preventDefault();
+  
+    console.log("Form submitted:", { name, email, subject, message });
+  setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+    alert("Thank you for your message! I will get back to you soon.");
+  }
   return (
     <section
       id="contact"
@@ -85,34 +101,55 @@ const Contact = ({theme}) => {
           </div>
         </div>
         <div className={styles.rightContact}>
-          <section className={styles.form1}>
-            <div className={styles.form1left}>
-              <p>Name</p>
-              <input type="text" placeholder="Enter Name" />
+          <form onSubmit={handleSubmit}>
+            <section className={styles.form1}>
+              <div className={styles.form1left}>
+                <p>Name</p>
+                <input
+           
+                  type="text"
+                  placeholder="Enter Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className={styles.form1right}>
+                <p>Email</p>
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+
+                />
+              </div>
+            </section>
+            <section className={styles.form2}>
+              <p>Subject</p>
+              <input
+                type="text"
+                placeholder=" Subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+              />
+            </section>
+            <section className={styles.form3}>
+              <p>Message</p>
+              <textarea
+                placeholder="Type your message here"
+                rows="5"
+                cols="50"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              ></textarea>
+            </section>
+            <div className={styles.sendBtnContainer}>
+              <button className={styles.sendBtn}>
+                <LuSend className={styles.sendIcon} />
+                Send Message
+              </button>
             </div>
-            <div className={styles.form1right}>
-              <p>Email</p>
-              <input type="text" placeholder="Enter Email" />
-            </div>
-          </section>
-          <section className={styles.form2}>
-            <p>Subject</p>
-            <input type="text" placeholder=" Subject" />
-          </section>
-          <section className={styles.form3}>
-            <p>Message</p>
-            <textarea
-              placeholder="Type your message here"
-              rows="5"
-              cols="50"
-            ></textarea>
-          </section>
-          <div className={styles.sendBtnContainer}>
-            <button className={styles.sendBtn}>
-              <LuSend className={styles.sendIcon} />
-              Send Message
-            </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>

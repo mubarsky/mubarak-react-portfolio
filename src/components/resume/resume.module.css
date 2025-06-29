@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  width: 80%;
 }
 .resumeContainer h1 {
   font-size: 1.5rem;
@@ -16,7 +17,9 @@
   background-color: #fefafa;
   border-radius: 8px;
   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-  width: 35%;
+  /* width: 35%; */
+  width: 100%;
+  max-width: 450px;
   padding: 30px;
   text-align: center;
   align-items: center;

@@ -6,6 +6,7 @@
 }
 .skillsContent {
   text-align: center;
+ 
 }
 .skillsContent h1 {
   font-size: 1.5rem;
@@ -22,9 +23,15 @@
 }
 .skills {
   display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+ 
 }
 .frontend {
-  flex: 1;
+  /* flex: 1; */
 }
 .frontend p {
   text-align: center;
@@ -37,29 +44,29 @@ img{
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 .backend {
-  flex: 1;
+  /* flex: 1; */
 }
 .backendIcons {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 .backend p {
   text-align: center;
   font-weight: 500;
 }
 .otherTools {
-  flex: 1;
+  /* flex: 1; */
 }
 .otherToolsIcons {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 .otherTools p {
   text-align: center;
@@ -71,3 +78,10 @@ img{
   border-bottom: 3px solid white;
 }
 
+.backendAndTools{
+  display: flex;
+}
+
+@media (max-width:950px){
+
+}

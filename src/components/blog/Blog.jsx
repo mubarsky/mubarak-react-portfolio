@@ -7,7 +7,6 @@ const Blog = ({ theme }) => {
     <section
       id="blog"
       className={clsx(styles.blogContainer, theme === "dark" && styles.dark)}
-      
     >
       <h1>Blog</h1>
       <p className={styles.pT}>
@@ -36,7 +35,7 @@ const Blog = ({ theme }) => {
             </div>
             <a
               href="
-            https://medium.com/@imansha.idr/mastering-react-a-complete-roadmap-for-aspiring-developers-224f2305dd67
+           https://medium.com/@ismailmubarak1221/mastering-react-a-complete-roadmap-for-aspiring-developers-c72db1589ab0
             "
               target="_blank"
               rel="noopener noreferrer"
@@ -70,7 +69,7 @@ const Blog = ({ theme }) => {
             </div>
             <a
               href="
-          https://medium.com/@imansha.idr/a-cheerful-guide-to-software-licences-and-copyright-law-71a185aad9cc
+       https://medium.com/@ismailmubarak1221/a-friendly-practical-guide-to-software-licenses-and-copyright-law-4e00058a5861
             "
               target="_blank"
               rel="noopener noreferrer"
@@ -104,7 +103,7 @@ const Blog = ({ theme }) => {
             </div>
             <a
               href="
-            https://medium.com/@imansha.idr/stored-procedures-in-mysql-e507b77e29b4
+           https://medium.com/@ismailmubarak1221/4a4c16e39f46
             "
               target="_blank"
               rel="noopener noreferrer"

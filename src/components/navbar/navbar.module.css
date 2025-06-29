@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-position: sticky;
+  position: sticky;
   top: 0;
   align-items: center;
   padding: 1rem 2rem;
@@ -18,13 +18,30 @@ position: sticky;
   font-size: 1.2rem;
   font-weight: bold;
 }
-.navbarlist {
+.rightNav {
   display: flex;
+  gap: 1rem;
+}
+.navbarlist {
+  /* display: flex;
   gap: 1.5rem;
+  font-size: 14px;
+  font-weight: bold; */
+  transition: max-height 0.8s ease, opacity 0.8s ease;
+  transform: translateY(-10px);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: white;
+  padding: 0 20px;
+  font-size: 14px;
 }
 .navlists {
-  font-size: 14px;
-  font-weight: bold;
+  /* font-size: 14px;
+  font-weight: bold; */
   /* color: #566666; */
   color: inherit;
   cursor: pointer;
@@ -36,14 +53,12 @@ position: sticky;
 
 .brightness {
   cursor: pointer;
- color: inherit;
+  color: inherit;
   display: inline-block;
 }
 
-
-
-
-
+.brightnessContainer {
+}
 
 .dark {
   background-color: black;
@@ -61,4 +76,74 @@ position: sticky;
 .navlists,
 .brightness {
   transition: color 0.3s;
+}
+
+.bars {
+  cursor: pointer;
+  display: none;
+}
+
+.dark .bars {
+  color: white;
+}
+
+.showMobileMenu {
+  /* display: block;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: white;
+  padding: 5rem; */
+  max-height: 500px; /* Large enough to fit links */
+  opacity: 1;
+  padding: 20px;
+  transform: translateY(0);
+}
+.showMobileMenulists:hover {
+  text-decoration: underline;
+}
+.dark .showMobileMenu {
+  background: black;
+  color: white;
+}
+@media (max-width: 630px) {
+  .navbarlist {
+    display: none;
+  }
+
+  .navbarlist.showMobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+
+    padding: 20px;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
+    z-index: 999;
+  }
+
+  .bars {
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .brightness {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 631px) {
+  .navbarlist {
+    display: flex;
+    position: static;
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    padding: 0;
+    gap: 1.5rem;
+    background: none;
+    overflow: visible;
+  }
 }

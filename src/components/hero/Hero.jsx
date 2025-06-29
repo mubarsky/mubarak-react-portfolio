@@ -9,7 +9,7 @@ const Hero = () => {
         <div className={styles.left}>
           <h1 className={styles.leftName}>Hi, I'm Ismail Mubarak</h1>
           <p className={styles.leftP1}>
-            Software Engineering Undergraduate | Full Stack Developer
+            Software Engineering | Frontend Developer
           </p>
           <p className={styles.leftP2}>
             I build accessible, user-friendly websites and applications with

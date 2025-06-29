@@ -17,7 +17,7 @@ const Footer = ({theme}) => {
       >
         <div className={styles.footerLeft}>
           <h1>Ismail Mubarak</h1>
-          <p>Software Engineering Undergraduate</p>
+          <p>Software Engineering </p>
         </div>
         <div className={styles.footerIcons}>
           <div className={styles.github}>

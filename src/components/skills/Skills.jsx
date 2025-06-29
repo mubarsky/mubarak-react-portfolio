@@ -1,5 +1,6 @@
 import styles from "./skills.module.css";
 import clsx from "clsx";
+import { frontendSkills, backendSkills, otherTools } from "../../../utils/data";
 const Skills = ({ theme }) => {
   return (
     <>
@@ -18,61 +19,39 @@ const Skills = ({ theme }) => {
           <div className={styles.frontend}>
             <p>Frontend Development</p>
             <div className={styles.frontendIcons}>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
-                width="50"
-              />
-
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
-                width="50"
-              />
-
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                width="50"
-              />
+              {frontendSkills.map((item) => (
+                <img key={item.id} src={item.icon} width="50" alt={item.name} />
+              ))}
             </div>
           </div>
-          <div className={styles.backend}>
-            <p>Backend Development</p>
-            <div className={styles.backendIcons}>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                width="50"
-              />
-
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
-                width="50"
-              />
-
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
-                width="50"
-              />
+          
+            <div className={styles.backend}>
+              <p>Backend Development</p>
+              <div className={styles.backendIcons}>
+                {backendSkills.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.icon}
+                    width="50"
+                    alt={item.name}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-          <div className={styles.otherTools}>
-            <p> Other Development Tools</p>
-            <div className={styles.otherToolsIcons}>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-                width="50"
-              />
-
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-                width="50"
-              />
+            <div className={styles.otherTools}>
+              <p> Other Development Tools</p>
+              <div className={styles.otherToolsIcons}>
+                {otherTools.map((item) => (
+                  <img
+                    key={item.id}
+                    src={item.icon}
+                    width="50"
+                    alt={item.name}
+                  />
+                ))}
+              </div>
+            </div>
          
-
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg"
-                width="50"
-              />
-            </div>
-          </div>
         </div>
       </section>
     </>
