@@ -35,7 +35,7 @@ const Contact = ({ theme }) => {
           color: "#566666",
         }}
       >
-        Have a question or want to work together? Send me a message!
+        Have a question or want to work together? Send me a message!!
       </p>
       <div className={styles.contactContent}>
         <div className={styles.leftContact}>
