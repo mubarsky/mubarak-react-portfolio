@@ -20,21 +20,47 @@ const Footer = ({theme}) => {
           <p>Software Engineering </p>
         </div>
         <div className={styles.footerIcons}>
-          <div className={styles.github}>
-            <LuGithub className={styles.githubI} />
-          </div>
-          <div className={styles.github}>
-            <LuLinkedin className={styles.githubI} />
-          </div>
-          <div className={styles.github}>
-            <TbBrandTwitter className={styles.githubI} />
-          </div>
-          <div className={styles.github}>
-            <FaInstagram className={styles.githubI} />
-          </div>
-          <div className={styles.github}>
-            <MdMailOutline className={styles.githubI} />
-          </div>
+          <a href="https://github.com/mubarsky" target="_blank">
+            <div className={styles.github}>
+              <LuGithub className={styles.githubI} />
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mubby-mubby/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={styles.github}>
+              <LuLinkedin className={styles.githubI} />
+            </div>
+          </a>
+          <a
+            href="https://x.com/MubarakIsm80813"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={styles.github}>
+              <TbBrandTwitter className={styles.githubI} />
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/mubarsky1221/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={styles.github}>
+              <FaInstagram className={styles.githubI} />
+            </div>
+          </a>
+          <a
+            href="mailto:ismailmubarak1221@gmail.com?subject=Hello&body=I%20want%20to%20connect"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={styles.github}>
+              <MdMailOutline className={styles.githubI} />
+            </div>
+          </a>
           <a href="#hero">
             <div className={styles.arrow}>
               <IoMdArrowUp className={styles.arrowI} />
