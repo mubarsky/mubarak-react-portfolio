@@ -117,13 +117,15 @@
     position: absolute;
     top: 60px;
     right: 10px;
-
-    padding: 20px;
+    width: 40%;
+    /* padding: 20px; */
     gap: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
     z-index: 999;
   }
-
+.navbarlist li{
+  font-size: 16px;
+}
   .bars {
     display: block;
     color: black;
