@@ -116,3 +116,16 @@
 :global(.dark) .blogContainer h1 {
   border-bottom: 3px solid white;
 }
+
+.blogButton button {
+  margin-top: 2rem;
+  padding: 0.7rem 1.5rem;
+  background-color: rgb(241, 239, 239);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.3rem;
+}

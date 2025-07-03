@@ -117,6 +117,17 @@ const Blog = ({ theme }) => {
           </div>
         </div>
       </div>
+      <div className={styles.blogButton}>
+        <button>
+          <a
+            href="https://medium.com/@ismailmubarak1221"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View all blogs
+          </a>
+        </button>
+      </div>
     </section>
   );
 };
