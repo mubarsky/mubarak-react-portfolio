@@ -16,13 +16,21 @@ const Hero = () => {
             modern technologies.
           </p>
           <div className={styles.heroBtn}>
-            <a href="#contact">
+            <a
+              href="mailto:ismailmubarak1221@gmail.com?subject=Hello&body=I%20want%20to%20connect"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className={styles.btn1}>
                 <CiMail className={styles.mail} />
                 Get In Touch
               </button>
             </a>
-            <a href="/Mubarak-Ismail-CV.pdf" download>
+            <a
+              href="/public/Ismail Mubarak - Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className={styles.btn2}>
                 <GoDownload className={styles.download} />
                 Download Resume (PDF)

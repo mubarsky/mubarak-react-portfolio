@@ -18,7 +18,11 @@ const Resume = ({ theme }) => {
             Download my resume to learn more about my experience, skills, and
             qualifications.
           </p>
-          <a href="/Mubarak-Ismail-CV.pdf" download>
+          <a
+            href="/public/Ismail Mubarak - Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             <button className={styles.resumeButton}>
               Download My Resume(PDF)
