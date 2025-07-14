@@ -27,7 +27,7 @@ const Hero = () => {
               </button>
             </a>
             <a
-              href="/public/Ismail Mubarak - Resume.pdf"
+              href="/Ismail Mubarak - Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
