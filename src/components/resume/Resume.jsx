@@ -12,7 +12,7 @@ const Resume = ({ theme }) => {
       >
         <h1>Resume</h1>
         <div className={styles.resumeContent}>
-          <FiFileText className={styles.resumeIcon} />
+          <FiFileText className={styles.resumeIcon} />   
           <p className={styles.myResume}>My Resume</p>
           <p className={styles.resumeDescription}>
             Download my resume to learn more about my experience, skills, and
@@ -26,7 +26,7 @@ const Resume = ({ theme }) => {
             {" "}
             <button className={styles.resumeButton}>
               Download My Resume(PDF)
-            </button>
+            </button>  
           </a>
         </div>
       </section>
@@ -34,4 +34,4 @@ const Resume = ({ theme }) => {
   );
 };
 
-export default Resume;
+export default Resume;      

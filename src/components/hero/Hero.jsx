@@ -44,7 +44,7 @@ const Hero = () => {
       </section>
       <div className={styles.scroll}>
         <p> Scroll down</p>
-        <FaArrowDown className={styles.arrow} />
+        <FaArrowDown className={styles.arrow} />  
       </div>
     </>
   );

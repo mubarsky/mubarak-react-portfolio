@@ -54,13 +54,13 @@ const Project = ({ theme }) => {
                       Admin panel
                     </p>
                     <div className={styles.slideBottomskills}>
-                      <p>html</p>
-                      <p>CSS</p>
-                      <p>java</p>
+                      <p>React</p>
+                    
                     </div>
                     <div className={styles.slideBottomBtn}>
                       <a
-                        href="https://healthpro-squad.vercel.app/"
+                        href="https://
+health-pro-react.vercel.app"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -68,13 +68,13 @@ const Project = ({ theme }) => {
                           View Project
                         </button>
                       </a>
-                      <a
+                      {/* <a
                         href="https://github.com/mubarsky/Healthpro-Squad"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <button className={styles.slideBtn2}>View Code</button>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -108,13 +108,13 @@ const Project = ({ theme }) => {
                         </button>
                       </a>
 
-                      <a
+                      {/* <a
                         href="https://github.com/mubarsky/portfolio"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <button className={styles.slideBtn2}>View Code</button>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -147,13 +147,13 @@ const Project = ({ theme }) => {
                         </button>
                       </a>
 
-                      <a
+                      {/* <a
                         href="https://github.com/mubarsky/BBC"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <button className={styles.slideBtn2}>View Code</button>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
