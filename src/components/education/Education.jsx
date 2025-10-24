@@ -55,28 +55,28 @@ const Education = ({ theme }) => {
             <div className={styles.certification_content}>
               <div className={styles.educationContent2_1}>
                 <p className={styles.p_4}>
-                  React basis - Meta Front-End Developer
+                  React basis - Marusoft Front-End Developer
                 </p>
-                <p className={styles.p2}>Meta • 2025</p>
+                <p className={styles.p2}>Marusoft • 2025</p>
               </div>
               <div className={styles.educationContent2_1}>
                 <p className={styles.p_4}>
-                  Programming with JavaScript - Meta Front-End Developer
+                  Programming with JavaScript - Marusoft Front-End Developer
                 </p>
-                <p className={styles.p2}>Meta • 2024</p>
+                <p className={styles.p2}>Marusoft • 2024</p>
               </div>
               <div className={styles.educationContent2_1}>
                 <p className={styles.p_4}>
-                  Version Control - Meta Front-End Developer Meta • 2024
+                  Version Control - Marusoft Front-End Developer  • 2024
                 </p>
-                <p className={styles.p2}>Meta • 2024</p>
+                <p className={styles.p2}>Marusoft • 2024</p>
               </div>
               <div className={styles.educationContent2_1}>
                 <p className={styles.p_4}>
-                  Introduction to Front-End Development - Meta Front-End
+                  Introduction to Front-End Development - Marusoft Front-End
                   Developer
                 </p>
-                <p className={styles.p2}>Meta • 2024</p>
+                <p className={styles.p2}>Marusoft • 2024</p>
               </div>
             </div>
           </div>
